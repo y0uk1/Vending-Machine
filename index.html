@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Vending Machine</title>
+</head>
+<body>
+  <div id="target">
+    <div class="d-flex align-items-center vh-100 bg-light">
+      <div class="d-flex justify-content-center align-items-center flex-column h-90 col-12 py-4 px-2 bg-blue">
+        <div class="d-flex justify-content-center align-items-center h-75 w-100 pb-4">
+          <div class="col-8 h-100">
+            <div class="d-flex justify-content-center align-items-center h-100 p-3 bg-light">
+              <div class="d-flex justify-content-center align-items-center h-100 w-100 bg-dark ">
+                <div class="d-flex justify-content-center align-items-center outer-box">
+                  <div id="slider-show">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 h-100">
+            <div class="h-30 pb-3">
+             <div class="d-flex justify-content-center align-items-center h-100 px-3 py-3 bg-secondary">
+              <div class="col-5 d-flex justify-content-center align-items-center h-100 bg-danger text-white">
+                <h1 id="numH1"></h1>
+              </div>
+              <div class="col-7">
+                <h1 id="nameH1"></h1>
+                <h1 id="priceH1"></h1>
+              </div>
+             </div>
+            </div>
+            <div class="h-70 bg-secondary overflow-auto">
+              <div id="number-box" class="d-flex justify-content-center align-items-center flex-row flex-wrap p-3">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start align-items-center h-25 w-100">
+          <div class="col-8  align-items-center text-center">
+              <button id="pushBtn" class="btn btn-secondary px-15 py-5"><h1>Push</h1></button>
+          </div>
+          <div class="col-4 h-100">
+            <h3 class="text-white text-center">Buying History</h3>
+            <div class="overflow-auto h-70 bg-secondary">
+              <div id="buying-history" class="d-flex justify-content-center align-items-center flex-row flex-wrap p-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</body>
+</html>
